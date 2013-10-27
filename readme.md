@@ -16,7 +16,7 @@ TODO:
  * Reimplement with TDD
  * Once the JS library is working --> setup the bookmarklet code (this will have a UI and be an example of how to use the library)
  * Improve UI (Should I have a better interface for inputting time? Should I allow for more types of time inputs? --> Yes)
- * Update UI image in this readme
+ * Update UI image in this readme + update the link to the minified bookmarklet in this readme
  * Add automated browser testing to ensure that it works in multiple browsers
 
 
@@ -25,6 +25,7 @@ TODO:
 `$ git clone https://github.com/Samangan/reverse-alarm-clock.git`
 
 `$ npm install`
+
 `$ npm install -g grunt-cli`
 
 Now lint, build, and create the minified file for the bookmarklet with:
@@ -34,8 +35,8 @@ Now lint, build, and create the minified file for the bookmarklet with:
 
 ###Usage###
 
-As a JS library
----------------
+####As a JS library####
+
 
 Call `reverseAlarm.promptUserForTime( )` to open the dialog window to allow the user to select the time until the tab closes. 
 
@@ -45,7 +46,7 @@ An example of how to use all of the functions is in the bookmarklet code.
 
 TODO: Document the rest of the functions here (this is meant to be modularized).
 
-As a bookmarklet
-----------------
-Add the minified version of the bookmarklet in [found here](https://github.com/Samangan/reverse-alarm-clock-bookmarklet/blob/master/reverseAlarmMinified.js) to your bookmarks. Then just press it on the page you wish. 
+####As a bookmarklet####
+
+Add the minified version of the bookmarklet in [found here](update with real address) to your bookmarks. Then just press it on the page you wish. 
 
