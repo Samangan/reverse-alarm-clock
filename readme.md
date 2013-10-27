@@ -22,7 +22,7 @@ Now lint, build, and create the minified file for the bookmarklet with:
 
 `grunt`
 
-###Buidling###
+###Testing###
 
 To test setup the buster server by using 
 
