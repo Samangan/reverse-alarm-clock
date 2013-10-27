@@ -36,7 +36,7 @@ To test setup the buster server by using
 
 `buster-server`
 
-and then navigate to http://localhost:1111 and capture as many browsers as you want to test. Then call `buster-test` to run the tests.
+and then navigate to [http://localhost:1111](http://localhost:1111) and capture as many browsers as you want to test. Then call `buster-test` to run the tests. See [here](http://docs.busterjs.org/en/latest/browser-testing/) for more information on buster browser testing.
 
 ####Building note for Windows Users####
 
