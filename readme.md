@@ -4,7 +4,7 @@ This bookmarklet and JS library allows the user to input how much time they want
 
 ![UI of previous version](http://i.imgur.com/feNZg.png)
 
-I made this tool, because I really needed it and it didn't exist. I use it when I want to listen to music or watch something while falling asleep. I find that backgroud noise helps me go to sleep, but I hate being woken up hours later when a movie, or music, etc suddenly gets very loud. This simple tool allows me to fall asleep to the content in my tab but have it close some time later once I am already asleep. 
+I made this tool, because I really needed it and it didn't exist. I use it when I want to listen to music or watch something while falling asleep. I find that backgroud noise helps me go to sleep, but I hate being woken up hours later when a movie, or music, etc suddenly gets very loud. This tool allows me to fall asleep to the content in my tab but have it close some time later once I am already asleep. 
 
 It usually only takes me about 35 minutes to fall asleep so I set mine to 55 minutes. I am no longer waking up to people screaming about dying in a video game at 2 AM. :]
 
@@ -25,6 +25,8 @@ TODO:
 `$ npm install`
 
 `$ npm install -g grunt-cli`
+
+`$ npm install -g buster`
 
 Now lint, build, and create the minified file for the bookmarklet with:
 
