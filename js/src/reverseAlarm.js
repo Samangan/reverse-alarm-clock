@@ -26,18 +26,35 @@
 	reverseAlarm._parseStringToHoursMinsSecs = function(userInputtedString) {
 		//input: string
 		//output: Array[hours, mins, seconds]
-		var parsedTime = new Array(3);
+		var hours =  userInputtedString.match(/\d+(?=\s*(hours|hour|hrs|hr|h))/gi);
+		var minutes =  userInputtedString.match(/\d+(?=\s*(minutes|minute|mins|min|m))/gi);
+		var seconds =  userInputtedString.match(/\d+(?=\s*(seconds|second|secs|sec|s))/gi);
 
-		//TODO: implement
+		if(hours){
+			hours = hours[0];
+		} else {
+			hours = 0;
+		}
 
+		if(minutes){
+			minutes = minutes[0];
+		} else {
+			minutes = 0;
+		}
 
-		return parsedTime;
+		if(seconds){
+			seconds = seconds[0];
+		} else {
+			seconds = 0;
+		}		
+
+		return [parseInt(hours), parseInt(minutes), parseInt(seconds)];
 	};
 
 	reverseAlarm._convertToMilliseconds = function(parsedTimeArr) {
 		//input: Array[hours, mins, seconds]
 		//output: number of milliseconds from the accumulative time inputted
-		
+
 	};
 
 
