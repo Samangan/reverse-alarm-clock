@@ -8,16 +8,6 @@ I made this tool, because I really needed it and it didn't exist. I use it when 
 
 It usually only takes me about 35 minutes to fall asleep so I set mine to 55 minutes. I am no longer waking up to people screaming about dying in a video game at 2 AM. :]
 
-
-
-TODO:
- * Reimplement with TDD
- * Once the JS library is working --> setup the bookmarklet code (this will have a UI and be an example of how to use the library)
- * Improve UI (Should I have a better interface for inputting time? Should I allow for more types of time inputs? --> Yes)
- * Update UI image in this readme + update the link to the minified bookmarklet in this readme
- * Add automated browser testing to ensure that it works in multiple browsers
-
-
 ###Buidling###
 
 `$ git clone https://github.com/Samangan/reverse-alarm-clock.git`
@@ -31,6 +21,8 @@ TODO:
 Now lint, build, and create the minified file for the bookmarklet with:
 
 `grunt`
+
+###Buidling###
 
 To test setup the buster server by using 
 
@@ -60,3 +52,10 @@ TODO: Document the rest of the functions here (this is meant to be modularized).
 
 Add the minified version of the bookmarklet in [found here](update with real address) to your bookmarks. Then just press it on the page you wish. 
 
+
+###TODO###
+ * Reimplement with TDD
+ * Once the JS library is working --> setup the bookmarklet code (this will have a UI and be an example of how to use the library)
+ * Improve UI (Should I have a better interface for inputting time? Should I allow for more types of time inputs? --> Yes)
+ * Update UI image in this readme + update the link to the minified bookmarklet in this readme
+ * Put a full guide on using git bash + node in windows environment with this project as an example (put on blog)
