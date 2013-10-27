@@ -11,8 +11,6 @@ It usually only takes me about 35 minutes to fall asleep so I set mine to 55 min
 
 
 TODO:
- * Setup grunt build with minification [Done]
- * Setup Buster testing [Done]
  * Reimplement with TDD
  * Once the JS library is working --> setup the bookmarklet code (this will have a UI and be an example of how to use the library)
  * Improve UI (Should I have a better interface for inputting time? Should I allow for more types of time inputs? --> Yes)
