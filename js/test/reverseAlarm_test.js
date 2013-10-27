@@ -1,10 +1,4 @@
 
-buster.testCase("A module", {
-    "states the obvious": function () {
-        buster.assert(true);
-    }
-});
-
 
 buster.testCase("testcase", {
 	setUp: function () {

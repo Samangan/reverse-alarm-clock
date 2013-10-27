@@ -53,6 +53,6 @@ module.exports = function(grunt) {
 	  grunt.loadNpmTasks('grunt-buster');
 
 	  // Define your tasks here
-	  grunt.registerTask('default', ['jshint', 'buster', 'uglify', 'copy']);
+	  grunt.registerTask('default', ['jshint', 'uglify', 'copy']);
 
 };

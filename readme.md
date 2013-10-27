@@ -32,6 +32,16 @@ Now lint, build, and create the minified file for the bookmarklet with:
 
 `grunt`
 
+To test setup the buster server by using 
+
+`buster-server`
+
+and then navigate to http://localhost:1111 and capture as many browsers as you want to test. Then call `buster-test` to run the tests.
+
+####Building note for Windows Users####
+
+Use [git bash](http://git-scm.com/downloads) to emulate a unix terminal. Buster does not work in Windows at the moment, but I have tested that everything works in windows using the git for windows terminal.
+
 
 ###Usage###
 
