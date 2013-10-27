@@ -1,0 +1,25 @@
+{
+  "name": "reverseAlarm",
+  "version": "0.0.0",
+  "description": "Input the amount of time you want the tab to remain open.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Samangan/reverse-alarm-clock.git"
+  },
+  "author": "Harry Hull",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Samangan/reverse-alarm-clock/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-buster": "~0.2.2"
+  }
+}
