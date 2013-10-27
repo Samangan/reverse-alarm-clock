@@ -6,8 +6,6 @@ This bookmarklet and JS library allows the user to input how much time they want
 
 I made this tool, because I really needed it and it didn't exist. I use it when I want to listen to music or watch something while falling asleep. I find that backgroud noise helps me go to sleep, but I hate being woken up hours later when a movie, or music, etc suddenly gets very loud. This tool allows me to fall asleep to the content in my tab but have it close some time later once I am already asleep. 
 
-It usually only takes me about 35 minutes to fall asleep so I set mine to 55 minutes. I am no longer waking up to people screaming about dying in a video game at 2 AM. :]
-
 ###Buidling###
 
 `$ git clone https://github.com/Samangan/reverse-alarm-clock.git`
@@ -28,7 +26,7 @@ To test setup the buster server by using
 
 `buster-server`
 
-and then navigate to [http://localhost:1111](http://localhost:1111) and capture as many browsers as you want to test. Then call `buster-test` to run the tests. See [here](http://docs.busterjs.org/en/latest/browser-testing/) for more information on buster browser testing.
+and then navigate to [http://localhost:1111](http://localhost:1111) and capture as many browsers as you want to test. Then call `buster-test` to run the tests (or use . See [here](http://docs.busterjs.org/en/latest/browser-testing/) for more information on buster browser testing.
 
 ####Building note for Windows Users####
 
@@ -54,7 +52,7 @@ Add the minified version of the bookmarklet in [found here](update with real add
 
 
 ###TODO###
- * Reimplement with TDD
+ - Reimplement with TDD
  * Once the JS library is working --> setup the bookmarklet code (this will have a UI and be an example of how to use the library)
  * Improve UI (Should I have a better interface for inputting time? Should I allow for more types of time inputs? --> Yes)
  * Update UI image in this readme + update the link to the minified bookmarklet in this readme
