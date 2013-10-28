@@ -4,7 +4,7 @@ This bookmarklet and JS library allows the user to input how much time they want
 
 ![UI of previous version](http://i.imgur.com/feNZg.png)
 
-I made this tool, because I really needed it and it didn't exist. I use it when I want to listen to music or watch something while falling asleep. I find that backgroud noise helps me go to sleep, but I hate being woken up hours later when a movie, or music, etc suddenly gets very loud. This tool allows me to fall asleep to the content in my tab but have it close some time later once I am already asleep. 
+I made this tool, because I really needed it and it didn't exist. I use it when I want to listen to music or watch something while falling asleep. I find that backgroud noise helps me go to sleep, but I hate being woken up hours later when a movie, or song suddenly gets very loud. This tool allows me to fall asleep to the content in my tab but have it close some time later once I am already asleep.
 
 ###Buidling###
 

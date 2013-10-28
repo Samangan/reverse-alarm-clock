@@ -189,5 +189,115 @@ buster.testCase("can parse input string into hours mins and seconds", {
 
 		//seconds
 		assert.match(arrOutput[2], 100);
+	},
+	"test can handle null input": function() {
+
+		input_verbose = "200m";
+		
+		arrOutput = reverseAlarm._parseStringToHoursMinsSecs(input_verbose);
+		//hours
+		assert.match(arrOutput[0], 0);
+
+		//minutes
+		assert.match(arrOutput[1], 200);
+
+		//seconds
+		assert.match(arrOutput[2], 0);
+
+
+		//all nulls
+		input_verbose = "";
+		
+		arrOutput = reverseAlarm._parseStringToHoursMinsSecs(input_verbose);
+		//hours
+		assert.match(arrOutput[0], 0);
+
+		//minutes
+		assert.match(arrOutput[1], 0);
+
+		//seconds
+		assert.match(arrOutput[2], 0);
+
+		//junk data
+		input_verbose = "1999";
+		
+		arrOutput = reverseAlarm._parseStringToHoursMinsSecs(input_verbose);
+		//hours
+		assert.match(arrOutput[0], 0);
+
+		//minutes
+		assert.match(arrOutput[1], 0);
+
+		//seconds
+		assert.match(arrOutput[2], 0);
+	}
+});
+
+buster.testCase("test can convert hours, minutes, and seconds into milliseconds", {
+	setUp: function () {
+		var reverseAlarm = window.reverseAlarm;
+	},
+	"test can convert seconds to milliseconds": function () {
+		var inputArr = [0, 0, 100];
+		var milliseconds = reverseAlarm._convertToMilliseconds(inputArr);
+		assert.match(milliseconds, 100000);
+	},
+	"test can convert minutes to milliseconds": function () {
+		var inputArr = [0, 1000, 0];
+		var milliseconds = reverseAlarm._convertToMilliseconds(inputArr);
+		assert.match(milliseconds, 60000000);
+	},
+	"test can convert hours to milliseconds": function () {
+		var inputArr = [1000, 0, 0];
+		var milliseconds = reverseAlarm._convertToMilliseconds(inputArr);
+		assert.match(milliseconds, 3600000000);
+	},
+	"test can convert hours, seconds, and minutes to milliseconds": function () {
+		var inputArr = [1000, 50, 10001];
+		var milliseconds = reverseAlarm._convertToMilliseconds(inputArr);
+		assert.match(milliseconds,3613001000);
+	}
+});
+
+//TODO: is this test needed?
+// All the inernals were already tested.
+buster.testCase("test can prompt user to insert time", {
+	setUp: function () {
+		var reverseAlarm = window.reverseAlarm;
+	},
+	"test can prompt user default value and returns proper value": function () {
+		//testing for default value: 1 hour 20 minutes 10 seconds
+		var millisToStayOpen = reverseAlarm.promptUserForTime();
+		assert.match(millisToStayOpen, 4810000);
+	}
+});
+
+
+buster.testCase("test can update time", {
+	setUp: function () {
+		var reverseAlarm = window.reverseAlarm;
+	},
+	"test can update time": function () {
+		var timeLeft = 2000;
+		var testDiv = document.createElement("div");
+		timeLeft = reverseAlarm._updateTime(testDiv, timeLeft);
+		assert.match(timeLeft, 1000);
+	},
+	"test can update very large number":function () {
+		var timeLeft = 3670463000;
+		var testDiv = document.createElement("div");
+		timeLeft = reverseAlarm._updateTime(testDiv, timeLeft);
+		assert.match(timeLeft, 3670462000);
+	}
+});
+
+buster.testCase("test can start countdown", {
+	setUp: function () {
+		var reverseAlarm = window.reverseAlarm;
+	},
+	"test can update time": function () {
+		var millisLeft = reverseAlarm.promptUserForTime();
+		reverseAlarm.startCountDown(millisLeft);
+		assert(1, 1);
 	}
 });
