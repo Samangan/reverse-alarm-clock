@@ -52,8 +52,7 @@ Add the minified version of the bookmarklet in [found here](update with real add
 
 
 ###TODO###
- - Reimplement with TDD
- * Once the JS library is working --> setup the bookmarklet code (this will have a UI and be an example of how to use the library)
+ - setup the bookmarklet code (this will have a UI and be an example of how to use the library)
  * Improve UI (Should I have a better interface for inputting time? Should I allow for more types of time inputs? --> Yes)
  * Update UI image in this readme + update the link to the minified bookmarklet in this readme
  * Put a full guide on using git bash + node in windows environment with this project as an example (put on blog)
